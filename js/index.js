@@ -313,8 +313,13 @@ function setDataOnLevel(level, currentLevelXP, currentLevelTotalXP, totalNextLev
     document.getElementById('xpValue').innerHTML = thousands_separators(currentLevelXP) + " XP";
     document.getElementById('motd-message').innerHTML = "Didn't mean to click on that? You can always click here to input your total experience!";
     document.getElementById('hand').innerHTML = "&#10067;";
-    document.getElementById('nextLevelSpan').innerHTML = "The below experience is how much is required for " + (level+1);
+    if(level != 40){
+        document.getElementById('nextLevelSpan').innerHTML = "The below experience is how much is required for " + (level+1);
+    }else{
+        document.getElementById('nextLevelSpan').innerHTML = "Level 40 is the current max level on PokemonGO!"
+    }
     progressBar.style.width = "2%";
+    document.getElementById('curXPSpan').innerHTML = "Below is the amount of experience you need to get to selected level.";
 }
 
 function setData(level, currentLevelXP, currentLevelTotalXP, totalNextLevelXP){
