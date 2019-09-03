@@ -3,35 +3,67 @@
 
 <head>
   <meta charset="utf-8">
-  <title>PokeGO XP Calculator</title>
+  <title>PokemonGO! Calculator</title>
   <meta name="author" content="Julio Milian">
-  <meta name="description" content="A simple PokemonGO XP Calculator">
+  <meta name="description" content="A user-friendly way to find out how many more actions you will need for your next level!">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="styles.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  
+  <link href="css/style.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+
 </head>
 
 <body>
 
-  <div class="navbar">
-    <div class="intro">PokemonGO Calculator</div>
-    <div class="beta">BETA</div>
-  </div>
-  <div class="welcomemessage">
-      Welcome! <br>To begin please enter your current overall XP.
-  </div>
-  <div class="userXP">
-        Enter XP:&nbsp;&nbsp;
-        <input id="inputbox" type="number" value="1" min="1" max="20000000">
-  </div>
-  <div class="levelcontainer">
-      <div id="leveltxt">Level&nbsp;<div id="levelnum">1</div></div>
-      <div class=levelbarwhite><div id="levelbar"></div></div>
-  </div>
+    <div class="welcome">
+        <div class="welcome-container">
+            <embed type="image/svg+xml" src="img/logo.svg">
+            <P>Welcome to PokemonGO Calculator!</P>
+            <p>Created by @Atsgnad</p>
+            <p>This message will automatically close.</p>
+        </div>
+    </div>
 
+    <div class="navigation">
+        <div class="logo"><embed type="image/svg+xml" src="img/logo.svg"></div>
+        <div class="navLinks">
+            <ul>
+                <li><a id="igHandle" href="http://instagram.com/atsgnad">@ATSGNAD</a></li>
+                <li><img id="igLogo" src="img/iglogo.svg"></li>
+            </ul>
+        </div>
+    </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="app.js"></script>
+    <div class="motd">
+        <p id="hand">&#128073;</p>
+        <p id="motd-message">CLICK HERE to begin, please enter your total XP.&nbsp&nbspIt is found at the bottom of your trainer profile.</p>
+    </div>
+
+    <main class="xpLevelStats">
+        <div class="statContainer" id="currentXP">
+            <p id="curXPTitle">CURRENT EXPERIENCE</p>
+            <span class="tooltip">This will automatically calculate your current level experience not total!</span>
+            <p id="curXPValue">0 XP</p>
+        </div>
+
+        <div class="statContainer" id="trainerLevel">
+            <p>TRAINER LEVEL</p>
+            <span>Use the slider to change level. <br>Note it will reset any XP you entered!</span>
+            <output id="rangeOutput">0</output>
+            <input type="range" name="trainerLevel", step="1", value="1", min="1", max="40" oninput="run(this.value);setGenericData(this.value);" id="rangeInput">
+        </div>
+
+        <div class="statContainer" id="nextLevelXP">
+            <p id="nextLevelTitle">NEXT LEVEL</p>
+            <span id="nextLevelSpan">Here you can see how much XP you need to hit your next level.</span>
+            <p id="xpValue">1,000 XP</p>
+            <div class="progressBar"><div id="progress"></div></div>
+        </div>
+    </main>    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
