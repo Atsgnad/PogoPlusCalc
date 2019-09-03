@@ -343,9 +343,3 @@ function run(){
     var value = document.getElementById('rangeInput').value;
     document.getElementById('rangeOutput').value = value;
    }
-
-function main (){
-
-}
-
-main();
