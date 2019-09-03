@@ -9,7 +9,7 @@ function thousands_separators(num) {
 
 $(document).ready(function () {
 
-    //$('.welcome').delay(4000).fadeOut('fast');
+    $('.welcome').delay(4000).fadeOut('fast');
 
     $('#igHandle').mouseover( function () { 
         bounce($('#igLogo'), 2, '10px', 200);
