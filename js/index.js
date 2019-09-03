@@ -314,7 +314,7 @@ function setDataOnLevel(level, currentLevelXP, currentLevelTotalXP, totalNextLev
     document.getElementById('motd-message').innerHTML = "Didn't mean to click on that? You can always click here to input your total experience!";
     document.getElementById('hand').innerHTML = "&#10067;";
     if(level != 40){
-        document.getElementById('nextLevelSpan').innerHTML = "The below experience is how much is required for " + (level+1);
+        document.getElementById('nextLevelSpan').innerHTML = "The below experience is how much is required for level " + (level+1);
     }else{
         document.getElementById('nextLevelSpan').innerHTML = "Level 40 is the current max level on PokemonGO!"
     }
