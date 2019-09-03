@@ -110,17 +110,25 @@ input[type=range] {
     color: white;
     text-align: center;
     z-index: 1010;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr; 
 }
+    .welcome-container {
+        grid-row: 2/3;
+    }
 
     /* SVG Image */
     .welcome-container embed{
-        width: 45%;
-        height: 45%;
-        padding-top: 20%;
+        width: 400px;
+        height: 400px;
+        
     }
-
+    .welcome-container #welcome-text {
+        padding-bottom: 60px;
+    }
     .welcome-container p {
         font-family: 'Oswald', sans-serif;
+        padding-bottom: 10px;
     }
 
 /* Navigation Bar */
