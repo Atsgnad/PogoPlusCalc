@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>PokeGO XP Calculator</title>
+  <meta name="author" content="Julio Milian">
+  <meta name="description" content="A simple PokemonGO XP Calculator">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="intro">PokemonGO Calculator</div>
+    <div class="beta">BETA</div>
+  </div>
+  <div class="welcomemessage">
+      Welcome! <br>To begin please enter your current overall XP.
+  </div>
+  <div class="userXP">
+        Enter XP:&nbsp;&nbsp;
+        <input id="inputbox" type="number" value="1" min="1" max="20000000">
+  </div>
+  <div class="levelcontainer">
+      <div id="leveltxt">Level&nbsp;<div id="levelnum">1</div></div>
+      <div class=levelbarwhite><div id="levelbar"></div></div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

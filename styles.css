@@ -1,0 +1,80 @@
+body{
+    background: #1d1d1d;
+}
+.navbar{
+    background-color: #f7b611;
+    border: 1.5px #966b00;
+    border-bottom-style: solid;
+    padding: 10px;
+}
+.intro {
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    margin: auto;
+    font-size: 30px;
+    display: inline-block;
+    text-shadow: 2px 2px 4px #303030;
+    padding: 5px;
+}
+.beta{
+    font-family: 'Oswald', sans-serif;
+    float: right;
+    opacity: 0.5;
+    padding: 5px;
+}
+.welcomemessage{
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.levelcontainer{
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    width: 275px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+#leveltxt{
+    float: left;
+    width: 20%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.levelbarwhite{
+    background: grey;
+    width: 220px;
+    border-radius: 10px;
+    float: right;
+
+}
+#levelbar{
+    height: 10px;
+    width: 80%;
+    border: 1px solid rgb(0, 183, 255);
+    border-radius: 10px;
+    background: rgb(0, 183, 255);
+}
+.userXP{
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 164px;
+}
