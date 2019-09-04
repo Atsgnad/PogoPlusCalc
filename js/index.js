@@ -208,7 +208,7 @@ function setDataOnLevel(level, currentLevelXP, currentLevelTotalXP, totalNextLev
         document.getElementById('raidValue').innerHTML = 'TIER1';
         setRaids(currentLevelXP);
     }else{
-        document.getElementById('raidsLeft').innerHTML = "TRAINER LEVEL 5 IS REQUIRED FOR RAIDS.";
+        document.getElementById('raidsLeft').innerHTML = "REQUIRES LEVEL 5!";
     }
 
     //setPokestopsInfo

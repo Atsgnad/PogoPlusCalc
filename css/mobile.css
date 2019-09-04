@@ -4,6 +4,8 @@ body{
     font-family: 'Oswald', sans-serif;
     z-index: 0;
     background: hsl(0, 0%, 93%);
+    width: 100vw;
+    height: 100vh;
 }
 
 p {
@@ -133,7 +135,7 @@ input[type=range] {
 
 /* Navigation Bar */
 .navigation {
-    width: 100vw;
+    width: 100%;
     height: 130px;
     background: hsl(240, 20%, 8%);
     color: white;
@@ -208,8 +210,8 @@ input[type=range] {
 
 /* Stat Main Container */
 .xpLevelStats {
-    height: 100px;
-    width: 100vw;
+    height: auto;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     color: hsl(240, 20%, 8%);
@@ -309,3 +311,64 @@ input[type=range] {
                 width: 3%;
                 border-radius: 4px;
             }
+
+.actionsWrapper {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    z-index: 4;
+}
+
+.actionContainer {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+    width: auto;
+    height: 20%;
+}
+
+.actionContainer > span {
+    font-size: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.emTitle {
+    font-weight: 500;
+}
+
+#raidSpan{
+    height: 90%;
+}
+#cycleP {
+    padding: 0;
+    margin: 0;
+    height: 10%;
+    font-size: 12px;
+}
+#raidsImage {
+    height: 40%;
+    padding-right: 10px;
+}
+
+.emCalculation{
+    font-weight: 700;
+}
+
+#pokestopImage {
+    height: 40%;
+    padding-right: 5px;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    background: hsl(240, 20%, 8%);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+}
