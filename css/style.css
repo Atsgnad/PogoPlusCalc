@@ -1,4 +1,8 @@
 body{
+    height: 100vh;
+    max-height: 100%;
+    width: 100vw;
+    max-width: 100%;
     margin: 0;
     position: absolute;
     font-family: 'Oswald', sans-serif;
@@ -105,6 +109,7 @@ input[type=range] {
 .welcome {
     height: 100vh;
     width: 100vw;
+    max-width:100%;
     background: black;
     position: absolute;
     color: white;
@@ -207,7 +212,6 @@ input[type=range] {
 
 /* Stat Main Container */
 .xpLevelStats {
-    height: 200px;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -237,6 +241,7 @@ input[type=range] {
                 align-items: end;
                 font-size: 40px;
                 line-height: 90%;
+                font-weight: 500;
             }
             #curXPValue {
                 display: grid;
@@ -258,6 +263,7 @@ input[type=range] {
                 align-items: end;
                 font-size: 40px;                
                 padding-bottom: 10px;
+                font-weight: 500;
             }
             #trainerLevel input {
                 width: 70%;
@@ -278,6 +284,7 @@ input[type=range] {
                 font-size: 40px;
                 display: grid;
                 align-items: end;
+                font-weight: 500;
             }
             #xpValue {
                 font-size: 30px;
@@ -299,3 +306,50 @@ input[type=range] {
                 width: 3%;
                 border-radius: 4px;
             }
+
+.actionsWrapper {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    z-index: 4;
+}
+
+.actionContainer {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+    width: 90%;
+    height: 20%;
+}
+
+.actionContainer > span {
+    font-size: 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.emTitle {
+    font-weight: 500;
+}
+
+#raidSpan{
+    height: 90%;
+}
+#cycleP {
+    padding: 0;
+    margin: 0;
+    height: 10%;;
+}
+#raidsImage {
+    height: 50%;
+    padding-right: 10px;
+}
+
+.emCalculation{
+    font-weight: 700;
+}
+
+#pokestopImage {
+    height: 50%;
+    padding-right: 5px;
+}
