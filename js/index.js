@@ -391,6 +391,7 @@ function setRaids(balanceXP, raidTier){
 
         //On user input.
         raidsLeft = Math.floor(balance/3000) + 1;
+        document.getElementById('raidsImage').setAttribute('src', './img/t1-raids.svg');
     }else{
         //On tier cycle.
         var raidData = [3000, 3500, 4000, 5000, 10000];
