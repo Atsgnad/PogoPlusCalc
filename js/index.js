@@ -409,7 +409,7 @@ function cycleRaids() {
     let imgPath = document.getElementById('raidsImage').getAttribute('src');
     let newImgPath;
     let raidText;
-    if(document.getElementById('rangeOutput').value > 5){
+    if(document.getElementById('rangeInput').value >= 5){
         switch (true) {
             case imgPath == './img/t1-raids.svg':
                 newImgPath = './img/t2-raids.svg';
